@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "GATSBY_EXPERIMENTAL_ROUTING_APIS=1 gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "clean": "gatsby clean",
