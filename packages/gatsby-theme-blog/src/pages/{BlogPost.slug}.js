@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 export default function Post({ data }) {
-  const post = data.mdx
+  const post = data.blogPost
 
   return (
     <Layout>
@@ -17,7 +17,7 @@ export default function Post({ data }) {
 
 export const pageQuery = graphql`
   query BlogPostById($id: String) {
-    mdx(id: { eq: $id }) {
+    blogPost(id: { eq: $id }) {
       body
     }
   }
